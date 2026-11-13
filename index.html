@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="អរុណរះ កាហ្វេ - Arunreah Coffee នៅសៀមរាប។ កាហ្វេពីកំពតនិងមណ្ឌលគិរី កិនស្រស់រាល់ព្រឹក ក្នុងបរិយាកាសស្ងប់ស្ងាត់។">
+  <title>អរុណរះ កាហ្វេ · Arunreah Coffee</title>
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700;900&family=Kantumruy+Pro:wght@400;500;600;700&family=Moul&family=Noto+Sans+Khmer:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== Header & Navigation ==================== -->
+  <header>
+    <div class="bar">
+      <!-- Brand Logo -->
+      <a class="logo" href="#home">
+        <span class="logo-badge">☕</span>
+        <div class="logo-text">
+          <span class="logo-title">អរុណរះ</span>
+          <span class="logo-sub">Arunreah Coffee · Siem Reap</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Bar -->
+      <nav class="desktop-nav" aria-label="ម៉ឺនុយមេ">
+        <a href="#home" data-p="home">ទំព័រដើម</a>
+        <a href="#menu" data-p="menu">ម៉ឺនុយ</a>
+        <a href="#offers" data-p="offers">ពិសេស</a>
+        <a href="#about" data-p="about">អំពីយើង</a>
+        <a href="#reviews" data-p="reviews">មតិភ្ញៀវ</a>
+        <a href="#contact" data-p="contact">ទំនាក់ទំនង</a>
+        <a href="#book" data-p="book" class="nav-book-link">កក់តុ</a>
+      </nav>
+
+      <!-- Header Actions (Theme Toggle & Mobile Hamburger) -->
+      <div class="header-actions">
+        <!-- Quick Call Link (Phone/Mobile) -->
+        <a href="tel:012345678" class="header-call-btn" aria-label="ទូរស័ព្ទមកហាង" title="ទូរស័ព្ទ: ០១២ ៣៤៥ ៦៧៨">📞</a>
+
+        <!-- Theme Toggle Button -->
+        <button id="themeToggle" class="theme-btn" type="button" aria-label="ប្តូរពន្លឺ (Theme)">🌙</button>
+
+        <!-- Mobile Menu Toggle Button (Hamburger) -->
+        <button id="menuToggle" class="menu-toggle-btn" type="button" aria-label="បើកម៉ឺនុយទូរស័ព្ទ" aria-expanded="false">
+          <span class="bar-line"></span>
+          <span class="bar-line"></span>
+          <span class="bar-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== Mobile Drawer (Side-over Sheet) ==================== -->
+  <div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <div class="drawer-panel">
+      <!-- Drawer Header -->
+      <div class="drawer-header">
+        <div class="logo">
+          <span class="logo-badge">☕</span>
+          <div class="logo-text">
+            <span class="logo-title">អរុណរះ កាហ្វេ</span>
+            <span class="logo-sub">Siem Reap · Cambodia</span>
+          </div>
+        </div>
+        <button id="drawerClose" class="drawer-close-btn" type="button" aria-label="បិទម៉ឺនុយ">&times;</button>
+      </div>
+
+      <!-- Drawer Nav Links -->
+      <nav class="drawer-nav">
+        <a href="#home" data-p="home" class="drawer-link">
+          <span class="drawer-link-icon">🏠</span>
+          <span class="drawer-link-text">ទំព័រដើម (Home)</span>
+        </a>
+        <a href="#menu" data-p="menu" class="drawer-link">
+          <span class="drawer-link-icon">☕</span>
+          <span class="drawer-link-text">ម៉ឺនុយភេសជ្ជៈ & នំ</span>
+          <span class="drawer-tag">៤០+ មុខ</span>
+        </a>
+        <a href="#offers" data-p="offers" class="drawer-link">
+          <span class="drawer-link-icon">🎁</span>
+          <span class="drawer-link-text">ប្រូម៉ូសិនពិសេស</span>
+          <span class="drawer-tag highlight">1+1 Free</span>
+        </a>
+        <a href="#about" data-p="about" class="drawer-link">
+          <span class="drawer-link-icon">📖</span>
+          <span class="drawer-link-text">ដំណើររឿងរបស់យើង</span>
+        </a>
+        <a href="#reviews" data-p="reviews" class="drawer-link">
+          <span class="drawer-link-icon">⭐</span>
+          <span class="drawer-link-text">មតិពីអតិថិជន</span>
+        </a>
+        <a href="#contact" data-p="contact" class="drawer-link">
+          <span class="drawer-link-icon">📍</span>
+          <span class="drawer-link-text">ទំនាក់ទំនង & ទីតាំង</span>
+        </a>
+      </nav>
+
+      <!-- Drawer Booking Button -->
+      <div class="drawer-cta">
+        <a href="#book" class="btn drawer-book-btn">📅 កក់តុទុកជាមុនឥឡូវនេះ</a>
+      </div>
+
+      <!-- Drawer Info Footer -->
+      <div class="drawer-footer">
+        <div class="drawer-info-row">
+          <span>🕒 ម៉ោងបើកបម្រើការ៖</span>
+          <strong>៦:៣០ ព្រឹក – ៨:០០ យប់</strong>
+        </div>
+        <div class="drawer-info-row">
+          <span>📞 ទូរស័ព្ទ / Telegram៖</span>
+          <a href="tel:012345678"><strong>០១២ ៣៤៥ ៦៧៨</strong></a>
+        </div>
+        <div class="drawer-socials">
+          <a href="https://t.me/arunreahcoffee" target="_blank" rel="noopener" class="social-chip">Telegram</a>
+          <a href="#" class="social-chip">Facebook</a>
+          <a href="#" class="social-chip">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== Mobile Bottom Navigation Bar (App Bar) ==================== -->
+  <nav class="mobile-bottom-bar" aria-label="ការរុករករហ័សតាមទូរស័ព្ទ">
+    <a href="#home" data-p="home" class="bottom-tab">
+      <span class="tab-icon">🏠</span>
+      <span class="tab-label">ទំព័រដើម</span>
+    </a>
+    <a href="#menu" data-p="menu" class="bottom-tab">
+      <span class="tab-icon">☕</span>
+      <span class="tab-label">ម៉ឺនុយ</span>
+    </a>
+    <a href="#offers" data-p="offers" class="bottom-tab">
+      <span class="tab-icon">🎁</span>
+      <span class="tab-label">ពិសេស</span>
+    </a>
+    <a href="#book" data-p="book" class="bottom-tab highlight-tab">
+      <span class="tab-icon">📅</span>
+      <span class="tab-label">កក់តុ</span>
+    </a>
+    <a href="#contact" data-p="contact" class="bottom-tab">
+      <span class="tab-icon">📍</span>
+      <span class="tab-label">ទីតាំង</span>
+    </a>
+  </nav>
+
+  <!-- ==================== Main Content ==================== -->
+  <main>
+    <!-- HOME PAGE -->
+    <div class="page on" id="home">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="wrap">
+          <div class="hero-content">
+            <!-- Modern Boutique Cafe Badges -->
+            <div class="hero-tags">
+              <span class="hero-chip">📍 សាលាកំរើក ក្រុងសៀមរាប</span>
+              <span class="hero-chip">🌿 គ្រាប់កាហ្វេក្នុងស្រុក ១០០%</span>
+            </div>
+
+            <span class="en">Arunreah Coffee · Specialty Roastery</span>
+            <h1>កាហ្វេក្តៅ ដើម្បីព្រឹកថ្មីរបស់អ្នក</h1>
+            <p>កាហ្វេពីកំពត និងមណ្ឌលគិរី អាំងនិងកិនស្រស់ៗរាល់ព្រឹក ក្នុងបរិយាកាសស្ងប់ស្ងាត់ មានផាសុកភាពខ្ពស់ ក្បែរផ្លូវបុរីអង្គរ។</p>
+            
+            <div class="hero-actions">
+              <a class="btn" href="#menu">☕ មើលម៉ឺនុយទាំងអស់</a>
+              <a class="btn ghost" href="#book">📅 កក់តុទុកមុន</a>
+            </div>
+
+            <!-- Quick Perks Bar -->
+            <div class="hero-perks">
+              <div class="perk-item">
+                <span class="perk-dot"></span>
+                <span>វ៉ាយហ្វាយល្បឿនលឿន</span>
+              </div>
+              <div class="perk-item">
+                <span class="perk-dot"></span>
+                <span>កន្លែងស្ងប់ស្ងាត់ធ្វើការ</span>
+              </div>
+              <div class="perk-item">
+                <span class="perk-dot"></span>
+                <span>សួនបៃតងធម្មជាតិ</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Coffee Cup SVG -->
+          <div class="hero-visual">
+            <svg class="cup" viewBox="0 0 240 240" role="img" aria-label="កែវកាហ្វេដែលមានចំហាយ">
+              <g class="steam">
+                <path d="M80 80c-14-18 14-30 0-50"/>
+                <path d="M120 80c-14-18 14-30 0-50"/>
+                <path d="M160 80c-14-18 14-30 0-50"/>
+              </g>
+              <path d="M50 100h140v40a70 70 0 0 1-140 0z" fill="#f3f1e6"/>
+              <path d="M190 112h14a24 24 0 0 1 0 48h-22" fill="none" stroke="#f3f1e6" stroke-width="12" stroke-linecap="round"/>
+              <ellipse cx="120" cy="100" rx="70" ry="9" fill="#6b3f22"/>
+              <ellipse cx="120" cy="226" rx="86" ry="8" fill="#000" opacity=".2"/>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Features Highlights -->
+      <section>
+        <div class="wrap three">
+          <div class="three-item rv">
+            <span class="three-icon">🌱</span>
+            <h3>គ្រាប់កាហ្វេក្នុងស្រុក</h3>
+            <p>យើងជ្រើសរើសគ្រាប់កាហ្វេពីកសិករខ្មែរ ហើយអាំងដោយខ្លួនឯងរាល់សប្តាហ៍ ដើម្បីទទួលបានគុណភាពខ្ពស់បំផុត។</p>
+          </div>
+          <div class="three-item rv">
+            <span class="three-icon">☕</span>
+            <h3>ធ្វើស្រស់ៗរាល់កែវ</h3>
+            <p>បារីស្តាជំនាញធ្វើកាហ្វេម្តងមួយកែវៗ យ៉ាងផ្ចិតផ្ចង់ ដើម្បីរសជាតិល្អបំផុតមុនពេលដល់ដៃអ្នក។</p>
+          </div>
+          <div class="three-item rv">
+            <span class="three-icon">🌿</span>
+            <h3>កន្លែងអង្គុយស្រណុក</h3>
+            <p>មានម៉ាស៊ីនត្រជាក់ វ៉ាយហ្វាយលឿន និងកន្លែងធ្វើការស្ងប់ស្ងាត់ មានផាសុកភាពខ្ពស់។</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Best Sellers Band -->
+      <div class="band">
+        <section>
+          <div class="wrap">
+            <div class="section-title-wrap">
+              <span class="section-tag">⭐ មុខម្ហូបពេញនិយម</span>
+              <h2 style="font-size: 26px; margin: 8px 0 12px;">មុខម្ហូបលក់ដាច់បំផុតប្រចាំហាង</h2>
+            </div>
+            <p class="lead">កាហ្វេទឹកដោះគោគ្រឿងទេស នំក្រូច និងកាហ្វេទឹកដូង ជាបីមុខដែលភ្ញៀវនិយមកុម្ម៉ង់ច្រើនជាងគេបំផុត។</p>
+            <p style="margin-top: 22px;">
+              <a class="btn" href="#menu">មើលម៉ឺនុយពេញលេញ (៤០+ មុខ)</a>
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <!-- Signature Arunreah Drinks -->
+      <section>
+        <div class="wrap">
+          <div class="head rv">
+            <span class="section-tag">✨ ហត្ថលេខាពិសេស</span>
+            <h2>ភេសជ្ជៈប្រចាំហាង អរុណរះ</h2>
+            <p class="lead">សាកល្បងភេសជ្ជៈពិសេសៗដែលមានរូបមន្តផ្តាច់មុខ ផ្សំចេញពីគ្រាប់កាហ្វេក្នុងស្រុកគុណភាពខ្ពស់។</p>
+          </div>
+          <div class="sig">
+            <div class="sigc rv">
+              <div class="em">☕</div>
+              <h3>កាហ្វេទឹកដោះគោគ្រឿងទេស</h3>
+              <p>កាហ្វេដិត ទឹកដោះគោខាប់ និងស្លឹកគ្រៃដែលផ្តល់ក្លិនក្រអូបឈ្ងុយពិសេស។</p>
+              <span class="price">$3.00</span>
+            </div>
+            <div class="sigc rv">
+              <div class="em">🥥</div>
+              <h3>កាហ្វេទឹកដូង</h3>
+              <p>អេស្ព្រេសូលើទឹកដូងស្រស់ រសជាតិស្រទន់ ស្រស់ស្រាយប្លែកមាត់។</p>
+              <span class="price">$3.25</span>
+            </div>
+            <div class="sigc rv">
+              <div class="em">🥭</div>
+              <h3>ស្មូធីស្វាយ</h3>
+              <p>ស្វាយទុំធម្មជាតិ ទឹកដោះគោ និងទឹកកក ផ្អែមត្រជាក់សម្រាប់ថ្ងៃក្តៅ។</p>
+              <span class="price">$3.50</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- From Farm to Cup Process -->
+      <div class="band">
+        <section>
+          <div class="wrap">
+            <div class="head rv">
+              <span class="section-tag">🚜 ដំណើរការច្បាស់លាស់</span>
+              <h2>ពីចម្ការរហូតដល់កែវកាហ្វេ</h2>
+              <p class="lead">ដំណើរការផលិតកាហ្វេប្រកបដោយគុណភាព និងការយកចិត្តទុកដាក់ខ្ពស់គ្រប់ជំហាន។</p>
+            </div>
+            <div class="steps">
+              <div class="step rv">
+                <h3>ប្រមូលផល</h3>
+                <p>គ្រាប់កាហ្វេទុំល្អពីចម្ការកសិករក្នុងខេត្តកំពត និងមណ្ឌលគិរី។</p>
+              </div>
+              <div class="step rv">
+                <h3>អាំងថ្មីៗ</h3>
+                <p>អាំងក្នុងម៉ាស៊ីនតូចៗរាល់សប្តាហ៍ ដើម្បីធានាបាននូវក្លិនក្រអូបឈ្ងុយជានិច្ច។</p>
+              </div>
+              <div class="step rv">
+                <h3>កិនពេលព្រឹក</h3>
+                <p>កិនគ្រាប់កាហ្វេភ្លាមៗមុនពេលឆុង ដើម្បីរក្សាភាពស្រស់និងរសជាតិដើម។</p>
+              </div>
+              <div class="step rv">
+                <h3>ចាក់ជូនអ្នក</h3>
+                <p>បារីស្តាចាក់ជូនម្តងមួយកែវៗ ដោយក្តីស្រឡាញ់ និងការយកចិត្តទុកដាក់។</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Stats Section -->
+      <section>
+        <div class="wrap">
+          <div class="stats rv">
+            <div>
+              <b>100%</b>
+              <span>គ្រាប់កាហ្វេកម្ពុជា</span>
+            </div>
+            <div>
+              <b>40+</b>
+              <span>មុខម្ហូបក្នុងម៉ឺនុយ</span>
+            </div>
+            <div>
+              <b>6:30</b>
+              <span>បើកទ្វាររាល់ព្រឹក</span>
+            </div>
+            <div>
+              <b>★ 4.9</b>
+              <span>ពិន្ទុពេញចិត្តពីភ្ញៀវ</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bottom CTA Banner -->
+      <section style="padding-top: 0;">
+        <div class="wrap">
+          <div class="cta rv">
+            <div>
+              <h2 style="font-size: 28px; margin-bottom: 14px;">មកផឹកកាហ្វេជាមួយយើង</h2>
+              <p class="lead" style="margin-bottom: 24px;">បើករាល់ថ្ងៃ នៅផ្លូវសាលាកំរើក ក្រុងសៀមរាប។ អ្នកអាចកក់តុទុកជាមុនបានយ៉ាងងាយស្រួល។</p>
+              <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                <a class="btn" href="#book">📅 កក់តុឥឡូវនេះ</a>
+                <a class="btn ghost" href="#contact">📍 មើលទីតាំង</a>
+              </div>
+            </div>
+            <div class="side">
+              <span>ម៉ោងបម្រើការ</span>
+              <b>6:30 – 20:00</b>
+              <span>រាល់ថ្ងៃ (ច័ន្ទ ដល់ អាទិត្យ)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- MENU PAGE -->
+    <div class="page" id="menu">
+      <section>
+        <div class="wrap">
+          <div class="section-title-wrap">
+            <span class="section-tag">☕ ម៉ឺនុយប្រចាំហាង</span>
+            <h2 style="font-size: 32px; margin: 8px 0 10px;">ម៉ឺនុយភេសជ្ជៈ នំ និងអាហារ</h2>
+          </div>
+          <p class="lead">តម្លៃគិតជាដុល្លារអាមេរិក ($)។ លោកអ្នកអាចជ្រើសរើសប្រភេទខាងក្រោម ឬប្រាប់បារីស្តាប្រសិនបើចង់បានកម្រិតជាតិស្ករតិច ឬទឹកដោះគោជម្រើស។</p>
+          <div class="tabs" role="group" aria-label="ប្រភេទមុខម្ហូប" id="tabs"></div>
+          <div class="items" id="items"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- OFFERS PAGE -->
+    <div class="page" id="offers">
+      <section>
+        <div class="wrap">
+          <div class="section-title-wrap">
+            <span class="section-tag">🎁 ប្រូម៉ូសិន</span>
+            <h2 style="font-size: 32px; margin: 8px 0 10px;">ប្រូម៉ូសិនពិសេស និងព្រឹត្តិការណ៍</h2>
+          </div>
+          <p class="lead">ការបញ្ចុះតម្លៃប្រចាំសប្តាហ៍ និងកម្មវិធីជួបជុំផ្សេងៗដែលយើងរៀបចំឡើងនៅក្នុងហាង។</p>
+
+          <div class="deals">
+            <div class="deal">
+              <span class="big">1+1</span>
+              <h3>ម៉ោងសប្បាយ (Happy Hour)</h3>
+              <p>រាល់ថ្ងៃ ម៉ោង ២:០០ ដល់ ៤:០០ រសៀល សម្រាប់ការទិញកាហ្វេត្រជាក់គ្រប់មុខ។</p>
+            </div>
+            <div class="deal">
+              <span class="big">8 → 9</span>
+              <h3>កាតសមាជិក (Loyalty Card)</h3>
+              <p>ទិញសន្សំគ្រប់ ៨ កែវ ទទួលបានកែវទី ៩ ដោយឥតគិតថ្លៃភ្លាមៗ។</p>
+            </div>
+            <div class="deal">
+              <span class="big">$18</span>
+              <h3>គ្រាប់កាហ្វេ ១ គីឡូក្រាម</h3>
+              <p>គ្រាប់កាហ្វេអាំងថ្មីៗ អាចទិញយកទៅផ្ទះ និងមានសេវាកិនជូនតាមចំណូលចិត្ត។</p>
+            </div>
+          </div>
+
+          <h2 style="font-size: 24px; margin-bottom: 18px;">ព្រឹត្តិការណ៍ខាងមុខ</h2>
+          <div class="events">
+            <div class="event">
+              <div class="date">វិច្ឆិកា<b>21</b></div>
+              <div>
+                <h3>រាត្រីតន្ត្រី Acoustic ស្រទន់</h3>
+                <p>ស្តាប់ភ្លេងពិរោះៗ ជាមួយកាហ្វេក្តៅឧណ្ហៗ ចាប់ផ្តើមពីម៉ោង ៧:០០ យប់តទៅ។</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date">វិច្ឆិកា<b>28</b></div>
+              <div>
+                <h3>ថ្នាក់រៀនធ្វើកាហ្វេជាមួយបារីស្តា</h3>
+                <p>រៀនបច្ចេកទេស Latte Art ពេលព្រឹកម៉ោង ១០:០០ (ទទួលកំណត់ត្រឹម ១០ នាក់ប៉ុណ្ណោះ)។</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date">ធ្នូ<b>05</b></div>
+              <div>
+                <h3>ផ្សារណាត់កាហ្វេ និងនំធ្វើដោយដៃ</h3>
+                <p>ការដាក់តាំងលក់ផលិតផលសិប្បកម្មក្នុងស្រុកនៅសួនច្បារខាងក្រៅ រហូតដល់ព្រលប់។</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- REVIEWS & FAQ PAGE -->
+    <div class="page" id="reviews">
+      <section>
+        <div class="wrap">
+          <div class="section-title-wrap">
+            <span class="section-tag">💬 មតិកែលម្អ</span>
+            <h2 style="font-size: 32px; margin: 8px 0 10px;">មតិពីអតិថិជន</h2>
+          </div>
+          <p class="lead">ចំណាប់អារម្មណ៍ពិត និងការវាយតម្លៃពីអតិថិជនដែលធ្លាប់បានមកពិសាកាហ្វេនៅទីនេះ។</p>
+
+          <div class="quotes">
+            <div class="quote">
+              <div class="quote-header">
+                <div class="quote-avatar">ស</div>
+                <div>
+                  <b>សុភា ចាន់</b>
+                  <small>អ្នកសៀមរាប · អតិថិជនប្រចាំ ✔️</small>
+                </div>
+              </div>
+              <span class="stars">★★★★★</span>
+              <p>«កាហ្វេទឹកដោះគោគ្រឿងទេសឆ្ងាញ់ណាស់ ហើយបរិយាកាសស្ងប់ស្ងាត់ អង្គុយធ្វើការបានស្រួលខ្លាំង។»</p>
+            </div>
+            <div class="quote">
+              <div class="quote-header">
+                <div class="quote-avatar" style="background:#d48b1e;color:#201811;">E</div>
+                <div>
+                  <b>Emma Watson</b>
+                  <small>Melbourne, Australia · ភ្ញៀវទេសចរ ✔️</small>
+                </div>
+              </div>
+              <span class="stars">★★★★★</span>
+              <p>«បារីស្តាសុភាពរាបសារ និងពន្យល់ពីប្រភពគ្រាប់កាហ្វេយ៉ាងក្បោះក្បាយ។ ខ្ញុំប្រាកដជានឹងត្រឡប់មកម្តងទៀត!»</p>
+            </div>
+            <div class="quote">
+              <div class="quote-header">
+                <div class="quote-avatar">វ</div>
+                <div>
+                  <b>វណ្ណៈ រិទ្ធ</b>
+                  <small>អ្នកធ្វើការ Remote · សៀមរាប ✔️</small>
+                </div>
+              </div>
+              <span class="stars">★★★★★</span>
+              <p>«នំក្រូអាសុងក្តៅៗ ញ៉ាំជាមួយអាមេរីកាណូ ជាអាហារពេលព្រឹកដ៏ល្អឥតខ្ចោះ មិនអាចខ្វះបាន។»</p>
+            </div>
+          </div>
+
+          <h2 style="font-size: 24px; margin-bottom: 18px;">សំណួរដែលសួរញឹកញាប់ (FAQ)</h2>
+          <details>
+            <summary>តើហាងមានផ្តល់ជូន Wi-Fi ល្បឿនលឿនដែរឬទេ?</summary>
+            <p>បាទ/ចាស! ហាងយើងខ្ញុំមានផ្តល់ជូន Wi-Fi ឥតគិតថ្លៃ ល្បឿនលឿន ស័ក្តិសមសម្រាប់ការអង្គុយធ្វើការ។ លោកអ្នកអាចសួរលេខសម្ងាត់ពីបុគ្គលិកបាន។</p>
+          </details>
+          <details>
+            <summary>តើហាងទទួលការទូទាត់តាមមធ្យោបាយណាខ្លះ?</summary>
+            <p>យើងខ្ញុំទទួលការទូទាត់ជាសាច់ប្រាក់ (ដុល្លារ និងរៀល), KHQR គ្រប់ធនាគារ (ABA, Acleda, Bakong...) និងកាតធនាគារ Visa/MasterCard។</p>
+          </details>
+          <details>
+            <summary>តើអាចនាំសត្វចិញ្ចឹមចូលមកបានទេ (Pet-Friendly)?</summary>
+            <p>បាន! លោកអ្នកអាចនាំសត្វចិញ្ចឹមមកកម្សាន្តនៅតំបន់សួនខាងក្រៅ (Outdoor Garden) បានដោយរីករាយ។</p>
+          </details>
+        </div>
+      </section>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div class="page" id="about">
+      <section>
+        <div class="wrap story">
+          <div>
+            <div class="section-title-wrap">
+              <span class="section-tag">🌿 ដំណើរដើមទង</span>
+              <h2 style="font-size: 32px; margin: 8px 0 18px;">ដំណើររឿងរបស់យើង</h2>
+            </div>
+            <p>អរុណរះ ចាប់ផ្តើមឡើងពីតុតូចមួយនៅមាត់ផ្លូវក្នុងក្រុងសៀមរាប ជាកន្លែងដែលអ្នកស្រុកជួបជុំគ្នាផឹកកាហ្វេពេលព្រឹកមុនចេញទៅបំពេញការងារ។</p>
+            <p>រហូតមកដល់ពេលនេះ យើងនៅតែប្រកាន់ខ្ជាប់នូវគោលការណ៍ដដែល គឺកាហ្វេដែលមានគុណភាពល្អ តម្លៃសមរម្យ និងស្នាមញញឹមរួសរាយរាក់ទាក់ស្វាគមន៍ភ្ញៀវគ្រប់រូប មិនថាអ្នកជាភ្ញៀវទេសចរ ឬជាអ្នកជិតខាងឡើយ។</p>
+            <p>គ្រាប់កាហ្វេរបស់យើងត្រូវបានទិញផ្ទាល់ពីកសិដ្ឋានខ្នាតតូចក្នុងប្រទេសកម្ពុជា ជាមួយការផ្តល់តម្លៃយុត្តិធម៌ ដើម្បីគាំទ្រដល់ជីវភាពកសិករក្នុងស្រុក។</p>
+          </div>
+          <ul class="facts">
+            <li>
+              <strong class="fact-num">100%</strong>
+              <span>គ្រាប់កាហ្វេធម្មជាតិពីកម្ពុជា</span>
+            </li>
+            <li>
+              <strong>ម្តងមួយកែវ</strong>
+              <span>ឆុងស្រស់ៗគ្រប់កែវនីមួយៗ</span>
+            </li>
+            <li>
+              <strong>ព្រឹក ៦:៣០</strong>
+              <span>បើកទ្វារស្វាគមន៍រាល់ថ្ងៃ</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div class="page" id="contact">
+      <section>
+        <div class="wrap">
+          <div class="section-title-wrap">
+            <span class="section-tag">📍 រកយើងឃើញនៅទីណា</span>
+            <h2 style="font-size: 32px; margin: 8px 0 10px;">ទំនាក់ទំនង & ទីតាំង</h2>
+          </div>
+          <p class="lead">សូមអញ្ជើញមកទទួលយកបទពិសោធន៍កាហ្វេជាមួយយើង ឬទាក់ទងមកកុម្ម៉ង់ទុកជាមុន។</p>
+
+          <div class="cards">
+            <div class="card">
+              <h3>🕒 ម៉ោងបើកបម្រើការ</h3>
+              <table class="hours">
+                <tr>
+                  <td>ច័ន្ទ – សុក្រ</td>
+                  <td>៦:៣០ – ២០:០០</td>
+                </tr>
+                <tr>
+                  <td>សៅរ៍ – អាទិត្យ</td>
+                  <td>៧:០០ – ២១:០០</td>
+                </tr>
+              </table>
+            </div>
+            <div class="card">
+              <h3>📍 ទីតាំងហាង</h3>
+              <p>ផ្លូវសាលាកំរើក ក្រុងសៀមរាប<br>ខេត្តសៀមរាប ព្រះរាជាណាចក្រកម្ពុជា</p>
+              <div style="margin-top:12px;">
+                <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn ghost" style="padding:6px 14px;font-size:13px;">🗺️ បើកមើលលើ Google Maps</a>
+              </div>
+            </div>
+            <div class="card">
+              <h3>📞 ទូរស័ព្ទ / Telegram</h3>
+              <p>០១២ ៣៤៥ ៦៧៨<br>Telegram: @arunreahcoffee</p>
+              <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+                <a href="tel:012345678" class="btn" style="padding:6px 14px;font-size:13px;">📞 ហៅទូរស័ព្ទ</a>
+                <a href="https://t.me/arunreahcoffee" target="_blank" rel="noopener" class="btn ghost" style="padding:6px 14px;font-size:13px;">💬 ឆាតតាម Telegram</a>
+              </div>
+            </div>
+            <div class="card">
+              <h3>🌐 បណ្តាញសង្គម</h3>
+              <p>Facebook: Arunreah Coffee<br>Instagram: @arunreah.coffee</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- BOOKING PAGE -->
+    <div class="page" id="book">
+      <section>
+        <div class="wrap">
+          <div class="section-title-wrap">
+            <span class="section-tag">📅 សេវាកម្មរហ័ស</span>
+            <h2 style="font-size: 32px; margin: 8px 0 10px;">កក់តុទុកជាមុន (Table Reservation)</h2>
+          </div>
+          <p class="lead">សូមបំពេញព័ត៌មានខាងក្រោម ប្រព័ន្ធនឹងបង្កើតសារសម្រាប់ផ្ញើទៅកាន់ Telegram ឬទាក់ទងមកយើងដោយផ្ទាល់។</p>
+
+          <div class="book" style="margin-top: 28px;">
+            <div class="fields">
+              <label>
+                ឈ្មោះរបស់អ្នក
+                <input id="bn" type="text" placeholder="ឧ. សុខា / Sokha" required>
+              </label>
+
+              <div class="two">
+                <label>
+                  កាលបរិច្ឆេទ
+                  <input id="bd" type="date">
+                </label>
+                <label>
+                  ម៉ោង
+                  <input id="bt" type="time" value="09:00">
+                </label>
+              </div>
+
+              <label>
+                ចំនួនភ្ញៀវ
+                <select id="bg">
+                  <option value="1">1 នាក់</option>
+                  <option value="2" selected>2 នាក់</option>
+                  <option value="3">3 នាក់</option>
+                  <option value="4">4 នាក់</option>
+                  <option value="5">5 នាក់</option>
+                  <option value="6+">6 នាក់ឡើងទៅ</option>
+                </select>
+              </label>
+
+              <label>
+                កំណត់ចំណាំបន្ថែម
+                <textarea id="bm" rows="3" placeholder="ឧ. ចង់បានកន្លែងជិតបង្អួច ឬមានកូនក្មេង..."></textarea>
+              </label>
+
+              <button class="btn" id="bb" type="button">✨ បង្កើតសារកក់តុ</button>
+            </div>
+
+            <!-- Output Message Card -->
+            <div class="out-wrap">
+              <div class="out" id="bo">សារកក់តុរបស់អ្នកនឹងបង្ហាញនៅទីនេះ បន្ទាប់ពីចុចប៊ូតុងបង្កើតសារ។</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ==================== Promo Popup Modal (5-Second Popup) ==================== -->
+  <div id="promoModal" class="promo-modal" aria-hidden="true" role="dialog" aria-labelledby="promoTitle">
+    <div class="promo-backdrop" id="promoBackdrop"></div>
+    <div class="promo-dialog">
+      <button class="promo-close" id="promoClose" type="button" aria-label="បិទផ្ទាំងប្រូម៉ូសិន">&times;</button>
+      
+      <div class="promo-banner">
+        <span class="promo-badge">🎉 ប្រូម៉ូសិនពិសេសប្រចាំថ្ងៃ</span>
+        <div class="promo-coffee-icon">☕✨</div>
+      </div>
+      
+      <div class="promo-body">
+        <h3 id="promoTitle">រីករាយជាមួយម៉ោងសប្បាយ!<br><span class="highlight">ទិញ ១ ថែម ១ (1+1 FREE)</span></h3>
+        <p class="promo-desc">
+          រាល់ការជាវភេសជ្ជៈត្រជាក់គ្រប់មុខ ចាប់ពីម៉ោង <strong>២:០០ – ៤:០០ រសៀល</strong> រាល់ថ្ងៃ! ទទួលបានរសជាតិកាហ្វេស្រស់ឈ្ងុយឆ្ងាញ់ទ្វេដង។
+        </p>
+        
+        <div class="promo-code-box">
+          <span class="promo-label">កូដប្រូម៉ូសិនពិសេស៖</span>
+          <div class="promo-code">ARUNREAH2026</div>
+        </div>
+
+        <div class="promo-actions">
+          <a class="btn" href="#offers" id="promoViewOffers">🎁 មើលប្រូម៉ូសិនទាំងអស់</a>
+          <a class="btn ghost" href="#book" id="promoBookNow">📅 កក់តុឥឡូវនេះ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== Footer ==================== -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-brand">
+        <span class="footer-logo">អរុណរះ កាហ្វេ</span>
+        <p class="footer-sub">Arunreah Specialty Coffee · Siem Reap, Cambodia</p>
+      </div>
+      <p>© 2026 អរុណរះ កាហ្វេ · រក្សាសិទ្ធិគ្រប់យ៉ាង</p>
+      <p style="font-size: 13px; opacity: 0.75;">ផលិតឡើងដោយក្តីស្រឡាញ់ចំពោះគ្រាប់កាហ្វេខ្មែរ</p>
+    </div>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
